@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.game-main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+}
+
+.game-box {
+  border: 0.5rem outset rgb(100, 100, 100);
+  border-radius: 1rem;
+}
+
+.game-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.5rem outset black;
+  font-family: "Heebo", sans-serif;
+}
+
+.game-table {
+  padding: 0.5rem;
+}
+
+.game-table-rows {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-table-columns {
+  width: 6rem;
+  height: 6rem;
+  margin: 0.5rem;
+  background: blueviolet;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-table-columns p {
+  font-size: 5rem;
+}
