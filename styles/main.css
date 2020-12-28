@@ -1,3 +1,12 @@
+:root {
+  --color-one: #ff9f1c;
+  --color-one-light: #fabf6d;
+  --color-two: #ffbf69;
+  --color-three: #ffffff;
+  --color-four: #cbf3f0;
+  --color-five: #2ec4b6;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,26 +23,41 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--color-one-light);
 }
 
 .game-container {
+  /* sin información aun */
 }
 
 .game-box {
-  border: 0.5rem outset rgb(100, 100, 100);
   border-radius: 1rem;
+  background: linear-gradient(
+    -45deg,
+    var(--color-four) 5%,
+    var(--color-two) 50%,
+    var(--color-five) 95%
+  );
+  border: var(--color-three) outset 0.3rem;
+  box-shadow: 5px 5px 15px 5px rgba(49, 49, 49, 0.8);
 }
 
 .game-title {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 0.5rem outset black;
+  /* border-bottom: 0.5rem outset black; */
   font-family: "Heebo", sans-serif;
 }
 
 .game-table {
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
+}
+
+.game-table .game-table-rows .game-table-columns p {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-one);
 }
 
 .game-table-rows {
@@ -46,11 +70,19 @@ html {
   width: 6rem;
   height: 6rem;
   margin: 0.5rem;
-  background: blueviolet;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0.5rem outset var(--color-five);
+}
+
+.game-title .game-table-columns {
+  background: var(--color-four);
+}
+
+.game-table .game-table-columns {
+  background: var(--color-three);
 }
 
 .game-table-columns p {
