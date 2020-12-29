@@ -19,10 +19,11 @@ html {
 
 .game-main {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: var(--color-one-light);
 }
 
@@ -38,7 +39,7 @@ html {
     var(--color-two) 50%,
     var(--color-five) 95%
   );
-  border: var(--color-three) outset 0.3rem;
+  border: var(--color-four) outset 0.3rem;
   box-shadow: 5px 5px 15px 5px rgba(49, 49, 49, 0.8);
 }
 
